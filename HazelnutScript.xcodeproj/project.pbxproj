@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A3484DA18F97DB2002DF659 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3484D918F97DB2002DF659 /* Cocoa.framework */; };
+		4A3484E418F97DB2002DF659 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A3484E218F97DB2002DF659 /* InfoPlist.strings */; };
+		4A3484E618F97DB2002DF659 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3484E518F97DB2002DF659 /* main.m */; };
+		4A3484EA18F97DB2002DF659 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4A3484E818F97DB2002DF659 /* Credits.rtf */; };
+		4A3484ED18F97DB2002DF659 /* HSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3484EC18F97DB2002DF659 /* HSAppDelegate.m */; };
+		4A3484F018F97DB2002DF659 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3484EE18F97DB2002DF659 /* MainMenu.xib */; };
+		4A3484F218F97DB2002DF659 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3484F118F97DB2002DF659 /* Images.xcassets */; };
+		4A3484F918F97DB2002DF659 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3484F818F97DB2002DF659 /* XCTest.framework */; };
+		4A3484FA18F97DB2002DF659 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3484D918F97DB2002DF659 /* Cocoa.framework */; };
+		4A34850218F97DB2002DF659 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A34850018F97DB2002DF659 /* InfoPlist.strings */; };
+		4A34850418F97DB2002DF659 /* HazelnutScriptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34850318F97DB2002DF659 /* HazelnutScriptTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A3484FB18F97DB2002DF659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A3484CE18F97DB2002DF659 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A3484D518F97DB2002DF659;
+			remoteInfo = HazelnutScript;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A3484D618F97DB2002DF659 /* HazelnutScript.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HazelnutScript.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A3484D918F97DB2002DF659 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4A3484DC18F97DB2002DF659 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4A3484DD18F97DB2002DF659 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4A3484DE18F97DB2002DF659 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A3484E118F97DB2002DF659 /* HazelnutScript-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HazelnutScript-Info.plist"; sourceTree = "<group>"; };
+		4A3484E318F97DB2002DF659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A3484E518F97DB2002DF659 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4A3484E718F97DB2002DF659 /* HazelnutScript-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HazelnutScript-Prefix.pch"; sourceTree = "<group>"; };
+		4A3484E918F97DB2002DF659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4A3484EB18F97DB2002DF659 /* HSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSAppDelegate.h; sourceTree = "<group>"; };
+		4A3484EC18F97DB2002DF659 /* HSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSAppDelegate.m; sourceTree = "<group>"; };
+		4A3484EF18F97DB2002DF659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4A3484F118F97DB2002DF659 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A3484F718F97DB2002DF659 /* HazelnutScriptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HazelnutScriptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A3484F818F97DB2002DF659 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4A3484FF18F97DB2002DF659 /* HazelnutScriptTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HazelnutScriptTests-Info.plist"; sourceTree = "<group>"; };
+		4A34850118F97DB2002DF659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A34850318F97DB2002DF659 /* HazelnutScriptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HazelnutScriptTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A3484D318F97DB2002DF659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3484DA18F97DB2002DF659 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A3484F418F97DB2002DF659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3484FA18F97DB2002DF659 /* Cocoa.framework in Frameworks */,
+				4A3484F918F97DB2002DF659 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A3484CD18F97DB2002DF659 = {
+			isa = PBXGroup;
+			children = (
+				4A3484DF18F97DB2002DF659 /* HazelnutScript */,
+				4A3484FD18F97DB2002DF659 /* HazelnutScriptTests */,
+				4A3484D818F97DB2002DF659 /* Frameworks */,
+				4A3484D718F97DB2002DF659 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A3484D718F97DB2002DF659 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A3484D618F97DB2002DF659 /* HazelnutScript.app */,
+				4A3484F718F97DB2002DF659 /* HazelnutScriptTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A3484D818F97DB2002DF659 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A3484D918F97DB2002DF659 /* Cocoa.framework */,
+				4A3484F818F97DB2002DF659 /* XCTest.framework */,
+				4A3484DB18F97DB2002DF659 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A3484DB18F97DB2002DF659 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A3484DC18F97DB2002DF659 /* AppKit.framework */,
+				4A3484DD18F97DB2002DF659 /* CoreData.framework */,
+				4A3484DE18F97DB2002DF659 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4A3484DF18F97DB2002DF659 /* HazelnutScript */ = {
+			isa = PBXGroup;
+			children = (
+				4A3484EB18F97DB2002DF659 /* HSAppDelegate.h */,
+				4A3484EC18F97DB2002DF659 /* HSAppDelegate.m */,
+				4A3484EE18F97DB2002DF659 /* MainMenu.xib */,
+				4A3484F118F97DB2002DF659 /* Images.xcassets */,
+				4A3484E018F97DB2002DF659 /* Supporting Files */,
+			);
+			path = HazelnutScript;
+			sourceTree = "<group>";
+		};
+		4A3484E018F97DB2002DF659 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A3484E118F97DB2002DF659 /* HazelnutScript-Info.plist */,
+				4A3484E218F97DB2002DF659 /* InfoPlist.strings */,
+				4A3484E518F97DB2002DF659 /* main.m */,
+				4A3484E718F97DB2002DF659 /* HazelnutScript-Prefix.pch */,
+				4A3484E818F97DB2002DF659 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A3484FD18F97DB2002DF659 /* HazelnutScriptTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A34850318F97DB2002DF659 /* HazelnutScriptTests.m */,
+				4A3484FE18F97DB2002DF659 /* Supporting Files */,
+			);
+			path = HazelnutScriptTests;
+			sourceTree = "<group>";
+		};
+		4A3484FE18F97DB2002DF659 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A3484FF18F97DB2002DF659 /* HazelnutScriptTests-Info.plist */,
+				4A34850018F97DB2002DF659 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A3484D518F97DB2002DF659 /* HazelnutScript */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A34850718F97DB2002DF659 /* Build configuration list for PBXNativeTarget "HazelnutScript" */;
+			buildPhases = (
+				4A3484D218F97DB2002DF659 /* Sources */,
+				4A3484D318F97DB2002DF659 /* Frameworks */,
+				4A3484D418F97DB2002DF659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HazelnutScript;
+			productName = HazelnutScript;
+			productReference = 4A3484D618F97DB2002DF659 /* HazelnutScript.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A3484F618F97DB2002DF659 /* HazelnutScriptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A34850A18F97DB2002DF659 /* Build configuration list for PBXNativeTarget "HazelnutScriptTests" */;
+			buildPhases = (
+				4A3484F318F97DB2002DF659 /* Sources */,
+				4A3484F418F97DB2002DF659 /* Frameworks */,
+				4A3484F518F97DB2002DF659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A3484FC18F97DB2002DF659 /* PBXTargetDependency */,
+			);
+			name = HazelnutScriptTests;
+			productName = HazelnutScriptTests;
+			productReference = 4A3484F718F97DB2002DF659 /* HazelnutScriptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A3484CE18F97DB2002DF659 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Pyrus;
+				TargetAttributes = {
+					4A3484F618F97DB2002DF659 = {
+						TestTargetID = 4A3484D518F97DB2002DF659;
+					};
+				};
+			};
+			buildConfigurationList = 4A3484D118F97DB2002DF659 /* Build configuration list for PBXProject "HazelnutScript" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A3484CD18F97DB2002DF659;
+			productRefGroup = 4A3484D718F97DB2002DF659 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A3484D518F97DB2002DF659 /* HazelnutScript */,
+				4A3484F618F97DB2002DF659 /* HazelnutScriptTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A3484D418F97DB2002DF659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3484E418F97DB2002DF659 /* InfoPlist.strings in Resources */,
+				4A3484F218F97DB2002DF659 /* Images.xcassets in Resources */,
+				4A3484EA18F97DB2002DF659 /* Credits.rtf in Resources */,
+				4A3484F018F97DB2002DF659 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A3484F518F97DB2002DF659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A34850218F97DB2002DF659 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A3484D218F97DB2002DF659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3484E618F97DB2002DF659 /* main.m in Sources */,
+				4A3484ED18F97DB2002DF659 /* HSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A3484F318F97DB2002DF659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A34850418F97DB2002DF659 /* HazelnutScriptTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A3484FC18F97DB2002DF659 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A3484D518F97DB2002DF659 /* HazelnutScript */;
+			targetProxy = 4A3484FB18F97DB2002DF659 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A3484E218F97DB2002DF659 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A3484E318F97DB2002DF659 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4A3484E818F97DB2002DF659 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A3484E918F97DB2002DF659 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4A3484EE18F97DB2002DF659 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A3484EF18F97DB2002DF659 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4A34850018F97DB2002DF659 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A34850118F97DB2002DF659 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A34850518F97DB2002DF659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4A34850618F97DB2002DF659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4A34850818F97DB2002DF659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HazelnutScript/HazelnutScript-Prefix.pch";
+				INFOPLIST_FILE = "HazelnutScript/HazelnutScript-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4A34850918F97DB2002DF659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HazelnutScript/HazelnutScript-Prefix.pch";
+				INFOPLIST_FILE = "HazelnutScript/HazelnutScript-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4A34850B18F97DB2002DF659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HazelnutScript.app/Contents/MacOS/HazelnutScript";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HazelnutScript/HazelnutScript-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HazelnutScriptTests/HazelnutScriptTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4A34850C18F97DB2002DF659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HazelnutScript.app/Contents/MacOS/HazelnutScript";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HazelnutScript/HazelnutScript-Prefix.pch";
+				INFOPLIST_FILE = "HazelnutScriptTests/HazelnutScriptTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A3484D118F97DB2002DF659 /* Build configuration list for PBXProject "HazelnutScript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A34850518F97DB2002DF659 /* Debug */,
+				4A34850618F97DB2002DF659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A34850718F97DB2002DF659 /* Build configuration list for PBXNativeTarget "HazelnutScript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A34850818F97DB2002DF659 /* Debug */,
+				4A34850918F97DB2002DF659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4A34850A18F97DB2002DF659 /* Build configuration list for PBXNativeTarget "HazelnutScriptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A34850B18F97DB2002DF659 /* Debug */,
+				4A34850C18F97DB2002DF659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A3484CE18F97DB2002DF659 /* Project object */;
+}
