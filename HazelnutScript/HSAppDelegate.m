@@ -18,9 +18,15 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
+    if ([ud objectForKey:@"theme"]!=nil) {
+        [self.aceEditorView setTheme:[ud integerForKey:@"theme"]];
+    } else {
+        [self.aceEditorView setTheme:ACEThemeXcode];
+    }
     [self.aceEditorView setDelegate:self];
     [self.aceEditorView setMode:ACEModeJavaScript];
-    [self.aceEditorView setTheme:ACEThemeXcode];
+
     [self.aceEditorView setShowInvisibles:NO];
 
     [self.prefPop setDelegate:self];
@@ -58,6 +64,8 @@
 - (void) setTheme:(NSInteger)index
 {
     NSLog(@"%@", [ACEThemeNames humanNameForTheme:index]);
+    NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
+    [ud setInteger:index forKey:@"theme"];
     [self.aceEditorView setTheme:index];
 }
 

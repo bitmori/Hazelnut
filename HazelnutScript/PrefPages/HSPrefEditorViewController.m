@@ -30,7 +30,11 @@
 {
     [self.themeList removeAllItems];
     [self.themeList addItemsWithTitles:[NSArray arrayWithArray:[ACEThemeNames humanThemeNames]]];
+    NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
     [self.themeList selectItemAtIndex:ACEThemeXcode];
+    if ([ud objectForKey:@"theme"]!=nil) {
+        [self.themeList selectItemAtIndex:[ud integerForKey:@"theme"]];
+    }
 }
 
 -(NSString*)identifier{
@@ -48,7 +52,6 @@
 }
 
 - (IBAction)onEditorThemeChanged:(id)sender {
-    NSLog(@"_theme changed");
     [self.delegate setTheme:[self.themeList indexOfSelectedItem]];
 }
 @end
