@@ -12,7 +12,11 @@
 @interface HSAppDelegate()
 {
     NSSearchField* m_searchField;
+    KFToolbarItem* m_status_label;
 }
+
+@property (strong, nonatomic) NSString* fileName;
+@property (strong, nonatomic) NSString* extName;
 - (IBAction)onMainMenuPreferences:(id)sender;
 
 @end
@@ -25,7 +29,8 @@
     [self.window setShowsTitle:YES];
     [self.window setVerticallyCenterTitle:YES];
 //    [self setTitleBarView];
-    
+    self.fileName = @"Untitled";
+    self.extName = @"js";
     NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
     if ([ud objectForKey:@"theme"]!=nil) {
         [self.aceEditorView setTheme:[ud integerForKey:@"theme"]];
@@ -117,7 +122,12 @@
     KFToolbarItem *runItem = [KFToolbarItem toolbarItemWithIcon:[NSImage imageNamed:@"run"] tag:5];
     runItem.toolTip = @"Run";
     
-    self.bottomToolbar.leftItems = @[settingItem, openItem, saveItem];
+    m_status_label = [[KFToolbarItem alloc] initWithTitle:@"Hazelnut 0.1" tag:6];
+    [m_status_label hideLeftShadow];
+    [m_status_label hideRightShadow];
+    [m_status_label setEnabled:NO];
+    
+    self.bottomToolbar.leftItems = @[settingItem, openItem, saveItem, m_status_label];
     self.bottomToolbar.rightItems = @[clearItem, consoleItem, runItem];
     [self.bottomToolbar setItemSelectionHandler:^(KFToolbarItemSelectionType selectionType, KFToolbarItem *toolbarItem, NSUInteger tag)
      {
@@ -170,6 +180,12 @@
     [op beginSheetModalForWindow:self.window completionHandler:^(NSInteger result) {
         if (result == NSFileHandlingPanelOKButton) {
             NSURL* path = [op URL];
+            self.fileName = [[path lastPathComponent] stringByDeletingPathExtension];
+            self.extName = [[path lastPathComponent] pathExtension];
+            [self updateStatusLabel:m_status_label
+                        WithContent:[NSString stringWithFormat:@"Opened: %@.%@", self.fileName, self.extName]
+                     ShowForSeconds:3.0
+                            ResetTo:@"Hazelnut 0.1"];
             NSString * str = [[NSString alloc] initWithContentsOfURL:path encoding:NSUTF8StringEncoding error:nil];
             [self.aceEditorView setString:str];
         }
@@ -178,16 +194,23 @@
 
 - (void)onSaveButton
 {
-    NSSavePanel* sv = [NSOpenPanel savePanel];
+    NSSavePanel* sv = [NSSavePanel savePanel];
     [sv setMessage:@"Please select a path where to save the js file."];
     [sv setCanCreateDirectories:YES];
     [sv setAllowedFileTypes:@[@"js", @"json", @"txt"]];
     [sv setAllowsOtherFileTypes:YES];
+//    [sv setNameFieldLabel:@"File name:"];
+    [sv setNameFieldStringValue:[NSString stringWithFormat:@"%@.%@", self.fileName, self.extName]];
     [sv beginSheetModalForWindow:self.window completionHandler:^(NSInteger result) {
         if (result == NSFileHandlingPanelOKButton) {
             NSURL* path = [sv URL];
             if (![self.aceEditorView.string writeToURL:path atomically:YES encoding:NSUTF8StringEncoding error:nil]) {
                 [[NSAlert alertWithMessageText:@"Something went wrong!" defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Hazelnut is unable to be planted to your Mac. :("] runModal];
+            } else {
+                [self updateStatusLabel:m_status_label
+                            WithContent:[NSString stringWithFormat:@"Saved: %@.%@", self.fileName, self.extName]
+                         ShowForSeconds:3.0
+                                ResetTo:@"Hazelnut 0.1"];
             }
         }
     }];
@@ -223,6 +246,15 @@
     NSRect viewFrame = NSMakeRect(72.f, NSMidY(titleBarView.bounds) - (viewSize.height / 2.f), viewSize.width, viewSize.height);
     m_searchField = [[NSSearchField alloc] initWithFrame:viewFrame];
     [titleBarView addSubview:m_searchField];
+}
+
+- (void)updateStatusLabel:(NSButton*)label WithContent:(NSString*)content ShowForSeconds:(double)sec ResetTo:(NSString*)string
+{
+    [label setTitle:content];
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(sec * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
+        [label setTitle:string];
+    });
 }
 
 @end

@@ -12,7 +12,10 @@
 
 - (void) appendContent:(NSString *)string
 {
-    NSString* content = [[NSString alloc] initWithFormat:@"%@%@\n", [self stringValue], string];
+    NSDate * date = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+    NSString* content = [[NSString alloc] initWithFormat:@"%@ - %@%@\n", [dateFormatter stringFromDate:date], [self stringValue], string];
     [self setStringValue:content];
 }
 

@@ -718,18 +718,24 @@
             </connections>
         </popover>
         <customView id="FwO-Wc-YwM">
-            <rect key="frame" x="0.0" y="0.0" width="163" height="96"/>
+            <rect key="frame" x="0.0" y="0.0" width="163" height="64"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNS-EP-Kng">
-                    <rect key="frame" x="62" y="40" width="38" height="17"/>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nu2-Nv-Hlo">
+                    <rect key="frame" x="18" y="20" width="128" height="26"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="RNR-wq-dgJ">
+                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="gjX-E5-iFS" id="MBn-Dz-UjV">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
-                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
+                        <menu key="menu" title="OtherViews" id="aq2-5C-feq">
+                            <items>
+                                <menuItem title="Item 1" state="on" id="gjX-E5-iFS"/>
+                                <menuItem title="Item 2" id="Zb3-I6-Flo"/>
+                                <menuItem title="Item 3" id="xzl-Xe-gzM"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                </popUpButton>
             </subviews>
         </customView>
         <window title="Console" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="H5p-mZ-mct" customClass="NSPanel">
@@ -741,25 +747,28 @@
                 <rect key="frame" x="0.0" y="0.0" width="276" height="378"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sjh-p2-caO">
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sjh-p2-caO">
                         <rect key="frame" x="0.0" y="20" width="276" height="358"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="vkt-Ar-2qg">
-                            <font key="font" metaFont="system"/>
+                        <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" state="on" drawsBackground="YES" id="vkt-Ar-2qg">
+                            <font key="font" metaFont="smallSystem"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZuG-T8-lf6">
-                        <rect key="frame" x="203" y="-7" width="79" height="32"/>
+                        <rect key="frame" x="249" y="1" width="26" height="19"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Empty" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UgY-dI-vfp">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                        <buttonCell key="cell" type="recessed" bezelStyle="recessed" image="clear" imagePosition="only" alignment="center" borderStyle="border" inset="2" id="UgY-dI-vfp">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                            <font key="font" metaFont="systemBold" size="12"/>
                         </buttonCell>
                     </button>
                 </subviews>
             </view>
         </window>
     </objects>
+    <resources>
+        <image name="clear" width="16" height="16"/>
+    </resources>
 </document>
