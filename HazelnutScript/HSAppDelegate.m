@@ -26,7 +26,7 @@
     [self.prefPop setDelegate:self];
     [self prepareToolbar];
     HSJavaScriptManager* js = [HSJavaScriptManager JSMan];
-    [js addNativeObject:self.consoleText WithName:@"consoleX"];
+    [js addNativeObject:self.consoleText WithName:@"console"];
 }
 
 // FIXME: need to recreate popover everytime to preserve the callout triangle.

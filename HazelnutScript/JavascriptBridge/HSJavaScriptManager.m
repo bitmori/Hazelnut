@@ -27,7 +27,7 @@
     self = [super init];
     if (self) {
         self.context = [[JSContext alloc] init];
-        [self addNativeObject:[[HSJsConsole alloc] init] WithName:@"console"];
+        [self addNativeObject:[[HSJsConsole alloc] init] WithName:@"xcode"];
     }
     return self;
 }

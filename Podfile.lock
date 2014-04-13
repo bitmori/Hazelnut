@@ -1,0 +1,16 @@
+PODS:
+  - ACEView (0.0.4)
+  - ITProgressBar (0.0.1)
+  - RHPreferences (1.0.0)
+
+DEPENDENCIES:
+  - ACEView (~> 0.0)
+  - ITProgressBar (~> 0.0)
+  - RHPreferences (~> 1.0)
+
+SPEC CHECKSUMS:
+  ACEView: 5f9ca27f38b96dba41e2b79228deb29ef6a390b8
+  ITProgressBar: 79dbfd839b537786699219cc9139797a258601e1
+  RHPreferences: 966401417c8e560d0d4f2d7d093c65ac134512f5
+
+COCOAPODS: 0.31.1
