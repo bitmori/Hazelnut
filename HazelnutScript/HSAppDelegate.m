@@ -21,7 +21,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [self.window setTitleBarHeight:60.0];
+    //[self.window setTitleBarHeight:60.0];
     [self.window setShowsTitle:YES];
     [self.window setVerticallyCenterTitle:YES];
 //    [self setTitleBarView];
