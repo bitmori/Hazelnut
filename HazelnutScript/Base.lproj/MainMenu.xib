@@ -18,7 +18,7 @@
                 <outlet property="consolePanel" destination="H5p-mZ-mct" id="a1N-aq-7B7"/>
                 <outlet property="consoleText" destination="Sjh-p2-caO" id="htC-HW-Ori"/>
                 <outlet property="prefPop" destination="8o5-wB-4en" id="Mqw-ds-ZXf"/>
-                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="9KH-av-S29"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -675,7 +675,7 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="HazelnutScript" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="HazelnutScript" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g" customClass="INAppStoreWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="191" y="282" width="640" height="480"/>

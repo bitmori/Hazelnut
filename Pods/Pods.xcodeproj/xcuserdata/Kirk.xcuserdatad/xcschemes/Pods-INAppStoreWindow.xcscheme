@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "170A3C6C6A4A46F59BE26078"
-               BuildableName = "libPods-ITProgressBar.a"
-               BlueprintName = "Pods-ITProgressBar"
+               BlueprintIdentifier = "C495BDF4031E4F749CD801BB"
+               BuildableName = "libPods-INAppStoreWindow.a"
+               BlueprintName = "Pods-INAppStoreWindow"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

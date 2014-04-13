@@ -10,6 +10,7 @@
 #import <ACEView/ACEView.h>
 //#import <KFToolbar/KFToolbar.h>
 #import "KFToolbar/KFToolbar.h"
+#import <INAppStoreWindow/INAppStoreWindow.h>
 #import <RHPreferences/RHPreferences.h>
 
 #import "HSPrefAboutViewController.h"
@@ -22,7 +23,7 @@
 
 @interface HSAppDelegate : NSObject <NSApplicationDelegate, NSPopoverDelegate, ACEViewDelegate, HSPrefProtocol>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet INAppStoreWindow *window;
 @property (unsafe_unretained) IBOutlet NSPanel *consolePanel;
 @property (weak) IBOutlet NSTextField *consoleText;
 

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "91A60A9DD28E41D39ABA2FDD"
+               BlueprintIdentifier = "D27D6CDE67E94D8199D2C437"
                BuildableName = "libPods-ACEView.a"
                BlueprintName = "Pods-ACEView"
                ReferencedContainer = "container:Pods.xcodeproj">

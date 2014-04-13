@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-INAppStoreWindow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ITProgressBar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4837AF314A92481BA531C42E</key>
+		<key>170A3C6C6A4A46F59BE26078</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8603F535777D4038902D5E4D</key>
+		<key>20146DA87E404DD98074DC2C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>91A60A9DD28E41D39ABA2FDD</key>
+		<key>AEE7312567D64B28969578A3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E680EA9CAFC74F748539598C</key>
+		<key>C495BDF4031E4F749CD801BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D27D6CDE67E94D8199D2C437</key>
 		<dict>
 			<key>primary</key>
 			<true/>

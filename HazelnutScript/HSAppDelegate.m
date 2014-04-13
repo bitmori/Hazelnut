@@ -10,6 +10,9 @@
 #import <ACEThemeNames.h>
 
 @interface HSAppDelegate()
+{
+    NSSearchField* m_searchField;
+}
 - (IBAction)onMainMenuPreferences:(id)sender;
 
 @end
@@ -18,6 +21,11 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    [self.window setTitleBarHeight:60.0];
+    [self.window setShowsTitle:YES];
+    [self.window setVerticallyCenterTitle:YES];
+//    [self setTitleBarView];
+    
     NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
     if ([ud objectForKey:@"theme"]!=nil) {
         [self.aceEditorView setTheme:[ud integerForKey:@"theme"]];
@@ -26,7 +34,6 @@
     }
     [self.aceEditorView setDelegate:self];
     [self.aceEditorView setMode:ACEModeJavaScript];
-
     [self.aceEditorView setShowInvisibles:NO];
 
     [self.prefPop setDelegate:self];
@@ -207,6 +214,15 @@
     }else{
         [self.consolePanel makeKeyAndOrderFront:self];
     }
+}
+
+- (void)setTitleBarView
+{
+    NSView * titleBarView = self.window.titleBarView;
+    NSSize viewSize = NSMakeSize(240.f, 22.f);
+    NSRect viewFrame = NSMakeRect(72.f, NSMidY(titleBarView.bounds) - (viewSize.height / 2.f), viewSize.width, viewSize.height);
+    m_searchField = [[NSSearchField alloc] initWithFrame:viewFrame];
+    [titleBarView addSubview:m_searchField];
 }
 
 @end
