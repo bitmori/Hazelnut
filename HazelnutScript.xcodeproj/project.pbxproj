@@ -18,6 +18,25 @@
 		4A3484FA18F97DB2002DF659 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3484D918F97DB2002DF659 /* Cocoa.framework */; };
 		4A34850218F97DB2002DF659 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A34850018F97DB2002DF659 /* InfoPlist.strings */; };
 		4A34850418F97DB2002DF659 /* HazelnutScriptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34850318F97DB2002DF659 /* HazelnutScriptTests.m */; };
+		4A34851C18F9B15B002DF659 /* HSPrefGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34851A18F9B15B002DF659 /* HSPrefGeneralViewController.m */; };
+		4A34851D18F9B15B002DF659 /* HSPrefGeneralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34851B18F9B15B002DF659 /* HSPrefGeneralViewController.xib */; };
+		4A34852118F9B16B002DF659 /* HSPrefAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34851F18F9B16B002DF659 /* HSPrefAboutViewController.m */; };
+		4A34852218F9B16B002DF659 /* HSPrefAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34852018F9B16B002DF659 /* HSPrefAboutViewController.xib */; };
+		4A34852618F9B179002DF659 /* HSPrefEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34852418F9B179002DF659 /* HSPrefEditorViewController.m */; };
+		4A34852718F9B179002DF659 /* HSPrefEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A34852518F9B179002DF659 /* HSPrefEditorViewController.xib */; };
+		4A34853B18F9E59C002DF659 /* KFItemConstraintBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34852B18F9E59C002DF659 /* KFItemConstraintBuilder.m */; };
+		4A34853C18F9E59C002DF659 /* KFToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34852D18F9E59C002DF659 /* KFToolbar.m */; };
+		4A34853D18F9E59C002DF659 /* KFToolBarConstraintBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34852F18F9E59C002DF659 /* KFToolBarConstraintBuilder.m */; };
+		4A34853E18F9E59C002DF659 /* KFToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34853118F9E59C002DF659 /* KFToolbarItem.m */; };
+		4A34853F18F9E59C002DF659 /* KFToolbarItemButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34853318F9E59C002DF659 /* KFToolbarItemButtonCell.m */; };
+		4A34854018F9E59C002DF659 /* KFViewBindingsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34853618F9E59C002DF659 /* KFViewBindingsBuilder.m */; };
+		4A34854118F9E59C002DF659 /* KFViewNameBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34853818F9E59C002DF659 /* KFViewNameBuilder.m */; };
+		4A34854218F9E59C002DF659 /* NSArray+KFIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34853A18F9E59C002DF659 /* NSArray+KFIAdditions.m */; };
+		4A34854518F9FD3B002DF659 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A34854418F9FD3B002DF659 /* JavaScriptCore.framework */; };
+		4A34854918FA04E0002DF659 /* HSJsConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34854818FA04E0002DF659 /* HSJsConsole.m */; };
+		4A34854C18FA059A002DF659 /* HSJavaScriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34854B18FA059A002DF659 /* HSJavaScriptManager.m */; };
+		4A34855218FA18EC002DF659 /* NSTextField+JSConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A34855118FA18EC002DF659 /* NSTextField+JSConsole.m */; };
+		F020CAD523374DB4859899B9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 778851544672472DAEA80DAD /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F12728984934D32AC415BDF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		4A3484D618F97DB2002DF659 /* HazelnutScript.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HazelnutScript.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A3484D918F97DB2002DF659 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4A3484DC18F97DB2002DF659 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,6 +70,41 @@
 		4A3484FF18F97DB2002DF659 /* HazelnutScriptTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HazelnutScriptTests-Info.plist"; sourceTree = "<group>"; };
 		4A34850118F97DB2002DF659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A34850318F97DB2002DF659 /* HazelnutScriptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HazelnutScriptTests.m; sourceTree = "<group>"; };
+		4A34851918F9B15B002DF659 /* HSPrefGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSPrefGeneralViewController.h; sourceTree = "<group>"; };
+		4A34851A18F9B15B002DF659 /* HSPrefGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSPrefGeneralViewController.m; sourceTree = "<group>"; };
+		4A34851B18F9B15B002DF659 /* HSPrefGeneralViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSPrefGeneralViewController.xib; sourceTree = "<group>"; };
+		4A34851E18F9B16B002DF659 /* HSPrefAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSPrefAboutViewController.h; sourceTree = "<group>"; };
+		4A34851F18F9B16B002DF659 /* HSPrefAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSPrefAboutViewController.m; sourceTree = "<group>"; };
+		4A34852018F9B16B002DF659 /* HSPrefAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSPrefAboutViewController.xib; sourceTree = "<group>"; };
+		4A34852318F9B179002DF659 /* HSPrefEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSPrefEditorViewController.h; sourceTree = "<group>"; };
+		4A34852418F9B179002DF659 /* HSPrefEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSPrefEditorViewController.m; sourceTree = "<group>"; };
+		4A34852518F9B179002DF659 /* HSPrefEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSPrefEditorViewController.xib; sourceTree = "<group>"; };
+		4A34852818F9D6DE002DF659 /* HSPrefProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSPrefProtocol.h; sourceTree = "<group>"; };
+		4A34852A18F9E59C002DF659 /* KFItemConstraintBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFItemConstraintBuilder.h; sourceTree = "<group>"; };
+		4A34852B18F9E59C002DF659 /* KFItemConstraintBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFItemConstraintBuilder.m; sourceTree = "<group>"; };
+		4A34852C18F9E59C002DF659 /* KFToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFToolbar.h; sourceTree = "<group>"; };
+		4A34852D18F9E59C002DF659 /* KFToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFToolbar.m; sourceTree = "<group>"; };
+		4A34852E18F9E59C002DF659 /* KFToolBarConstraintBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFToolBarConstraintBuilder.h; sourceTree = "<group>"; };
+		4A34852F18F9E59C002DF659 /* KFToolBarConstraintBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFToolBarConstraintBuilder.m; sourceTree = "<group>"; };
+		4A34853018F9E59C002DF659 /* KFToolbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFToolbarItem.h; sourceTree = "<group>"; };
+		4A34853118F9E59C002DF659 /* KFToolbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFToolbarItem.m; sourceTree = "<group>"; };
+		4A34853218F9E59C002DF659 /* KFToolbarItemButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFToolbarItemButtonCell.h; sourceTree = "<group>"; };
+		4A34853318F9E59C002DF659 /* KFToolbarItemButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFToolbarItemButtonCell.m; sourceTree = "<group>"; };
+		4A34853418F9E59C002DF659 /* KFToolBarPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFToolBarPrivate.h; sourceTree = "<group>"; };
+		4A34853518F9E59C002DF659 /* KFViewBindingsBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFViewBindingsBuilder.h; sourceTree = "<group>"; };
+		4A34853618F9E59C002DF659 /* KFViewBindingsBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFViewBindingsBuilder.m; sourceTree = "<group>"; };
+		4A34853718F9E59C002DF659 /* KFViewNameBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFViewNameBuilder.h; sourceTree = "<group>"; };
+		4A34853818F9E59C002DF659 /* KFViewNameBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFViewNameBuilder.m; sourceTree = "<group>"; };
+		4A34853918F9E59C002DF659 /* NSArray+KFIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+KFIAdditions.h"; sourceTree = "<group>"; };
+		4A34853A18F9E59C002DF659 /* NSArray+KFIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+KFIAdditions.m"; sourceTree = "<group>"; };
+		4A34854418F9FD3B002DF659 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		4A34854718FA04E0002DF659 /* HSJsConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSJsConsole.h; sourceTree = "<group>"; };
+		4A34854818FA04E0002DF659 /* HSJsConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSJsConsole.m; sourceTree = "<group>"; };
+		4A34854A18FA059A002DF659 /* HSJavaScriptManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSJavaScriptManager.h; sourceTree = "<group>"; };
+		4A34854B18FA059A002DF659 /* HSJavaScriptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSJavaScriptManager.m; sourceTree = "<group>"; };
+		4A34855018FA18EC002DF659 /* NSTextField+JSConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextField+JSConsole.h"; sourceTree = "<group>"; };
+		4A34855118FA18EC002DF659 /* NSTextField+JSConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextField+JSConsole.m"; sourceTree = "<group>"; };
+		778851544672472DAEA80DAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +112,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A34854518F9FD3B002DF659 /* JavaScriptCore.framework in Frameworks */,
 				4A3484DA18F97DB2002DF659 /* Cocoa.framework in Frameworks */,
+				F020CAD523374DB4859899B9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +137,7 @@
 				4A3484FD18F97DB2002DF659 /* HazelnutScriptTests */,
 				4A3484D818F97DB2002DF659 /* Frameworks */,
 				4A3484D718F97DB2002DF659 /* Products */,
+				0F12728984934D32AC415BDF /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,9 +153,11 @@
 		4A3484D818F97DB2002DF659 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A34854418F9FD3B002DF659 /* JavaScriptCore.framework */,
 				4A3484D918F97DB2002DF659 /* Cocoa.framework */,
 				4A3484F818F97DB2002DF659 /* XCTest.framework */,
 				4A3484DB18F97DB2002DF659 /* Other Frameworks */,
+				778851544672472DAEA80DAD /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,6 +175,9 @@
 		4A3484DF18F97DB2002DF659 /* HazelnutScript */ = {
 			isa = PBXGroup;
 			children = (
+				4A34854618FA04A2002DF659 /* JavascriptBridge */,
+				4A34852918F9E59C002DF659 /* KFToolbar */,
+				4A34851818F9B100002DF659 /* PrefPages */,
 				4A3484EB18F97DB2002DF659 /* HSAppDelegate.h */,
 				4A3484EC18F97DB2002DF659 /* HSAppDelegate.m */,
 				4A3484EE18F97DB2002DF659 /* MainMenu.xib */,
@@ -154,6 +217,60 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4A34851818F9B100002DF659 /* PrefPages */ = {
+			isa = PBXGroup;
+			children = (
+				4A34852818F9D6DE002DF659 /* HSPrefProtocol.h */,
+				4A34851918F9B15B002DF659 /* HSPrefGeneralViewController.h */,
+				4A34851A18F9B15B002DF659 /* HSPrefGeneralViewController.m */,
+				4A34851B18F9B15B002DF659 /* HSPrefGeneralViewController.xib */,
+				4A34852318F9B179002DF659 /* HSPrefEditorViewController.h */,
+				4A34852418F9B179002DF659 /* HSPrefEditorViewController.m */,
+				4A34852518F9B179002DF659 /* HSPrefEditorViewController.xib */,
+				4A34851E18F9B16B002DF659 /* HSPrefAboutViewController.h */,
+				4A34851F18F9B16B002DF659 /* HSPrefAboutViewController.m */,
+				4A34852018F9B16B002DF659 /* HSPrefAboutViewController.xib */,
+			);
+			path = PrefPages;
+			sourceTree = "<group>";
+		};
+		4A34852918F9E59C002DF659 /* KFToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				4A34852A18F9E59C002DF659 /* KFItemConstraintBuilder.h */,
+				4A34852B18F9E59C002DF659 /* KFItemConstraintBuilder.m */,
+				4A34852C18F9E59C002DF659 /* KFToolbar.h */,
+				4A34852D18F9E59C002DF659 /* KFToolbar.m */,
+				4A34852E18F9E59C002DF659 /* KFToolBarConstraintBuilder.h */,
+				4A34852F18F9E59C002DF659 /* KFToolBarConstraintBuilder.m */,
+				4A34853018F9E59C002DF659 /* KFToolbarItem.h */,
+				4A34853118F9E59C002DF659 /* KFToolbarItem.m */,
+				4A34853218F9E59C002DF659 /* KFToolbarItemButtonCell.h */,
+				4A34853318F9E59C002DF659 /* KFToolbarItemButtonCell.m */,
+				4A34853418F9E59C002DF659 /* KFToolBarPrivate.h */,
+				4A34853518F9E59C002DF659 /* KFViewBindingsBuilder.h */,
+				4A34853618F9E59C002DF659 /* KFViewBindingsBuilder.m */,
+				4A34853718F9E59C002DF659 /* KFViewNameBuilder.h */,
+				4A34853818F9E59C002DF659 /* KFViewNameBuilder.m */,
+				4A34853918F9E59C002DF659 /* NSArray+KFIAdditions.h */,
+				4A34853A18F9E59C002DF659 /* NSArray+KFIAdditions.m */,
+			);
+			path = KFToolbar;
+			sourceTree = "<group>";
+		};
+		4A34854618FA04A2002DF659 /* JavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				4A34854718FA04E0002DF659 /* HSJsConsole.h */,
+				4A34854818FA04E0002DF659 /* HSJsConsole.m */,
+				4A34854A18FA059A002DF659 /* HSJavaScriptManager.h */,
+				4A34854B18FA059A002DF659 /* HSJavaScriptManager.m */,
+				4A34855018FA18EC002DF659 /* NSTextField+JSConsole.h */,
+				4A34855118FA18EC002DF659 /* NSTextField+JSConsole.m */,
+			);
+			path = JavascriptBridge;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A34850718F97DB2002DF659 /* Build configuration list for PBXNativeTarget "HazelnutScript" */;
 			buildPhases = (
+				B5E9CF02B6B34A0D80311F86 /* Check Pods Manifest.lock */,
 				4A3484D218F97DB2002DF659 /* Sources */,
 				4A3484D318F97DB2002DF659 /* Frameworks */,
 				4A3484D418F97DB2002DF659 /* Resources */,
+				7F2982C498A24333B3794A9F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,10 +350,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A34852218F9B16B002DF659 /* HSPrefAboutViewController.xib in Resources */,
 				4A3484E418F97DB2002DF659 /* InfoPlist.strings in Resources */,
 				4A3484F218F97DB2002DF659 /* Images.xcassets in Resources */,
 				4A3484EA18F97DB2002DF659 /* Credits.rtf in Resources */,
 				4A3484F018F97DB2002DF659 /* MainMenu.xib in Resources */,
+				4A34851D18F9B15B002DF659 /* HSPrefGeneralViewController.xib in Resources */,
+				4A34852718F9B179002DF659 /* HSPrefEditorViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,13 +370,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F2982C498A24333B3794A9F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5E9CF02B6B34A0D80311F86 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A3484D218F97DB2002DF659 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A34853B18F9E59C002DF659 /* KFItemConstraintBuilder.m in Sources */,
+				4A34852118F9B16B002DF659 /* HSPrefAboutViewController.m in Sources */,
 				4A3484E618F97DB2002DF659 /* main.m in Sources */,
+				4A34854C18FA059A002DF659 /* HSJavaScriptManager.m in Sources */,
+				4A34854918FA04E0002DF659 /* HSJsConsole.m in Sources */,
 				4A3484ED18F97DB2002DF659 /* HSAppDelegate.m in Sources */,
+				4A34853E18F9E59C002DF659 /* KFToolbarItem.m in Sources */,
+				4A34855218FA18EC002DF659 /* NSTextField+JSConsole.m in Sources */,
+				4A34853F18F9E59C002DF659 /* KFToolbarItemButtonCell.m in Sources */,
+				4A34853C18F9E59C002DF659 /* KFToolbar.m in Sources */,
+				4A34852618F9B179002DF659 /* HSPrefEditorViewController.m in Sources */,
+				4A34854018F9E59C002DF659 /* KFViewBindingsBuilder.m in Sources */,
+				4A34851C18F9B15B002DF659 /* HSPrefGeneralViewController.m in Sources */,
+				4A34854118F9E59C002DF659 /* KFViewNameBuilder.m in Sources */,
+				4A34854218F9E59C002DF659 /* NSArray+KFIAdditions.m in Sources */,
+				4A34853D18F9E59C002DF659 /* KFToolBarConstraintBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +553,7 @@
 		};
 		4A34850818F97DB2002DF659 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F12728984934D32AC415BDF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -397,6 +567,7 @@
 		};
 		4A34850918F97DB2002DF659 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F12728984934D32AC415BDF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -467,6 +638,7 @@
 				4A34850918F97DB2002DF659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A34850A18F97DB2002DF659 /* Build configuration list for PBXNativeTarget "HazelnutScriptTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +647,7 @@
 				4A34850C18F97DB2002DF659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
